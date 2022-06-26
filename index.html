@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>VISWAKARM</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="data:image/jpeg;base64,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" rel="icon">
+  <link href="https://d3pc1xvrcw35tl.cloudfront.net/sm/images/1103x827/vishwakarma-puja-7_201909116353.jpg" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Maxim - v4.7.0
+  * Template URL: https://bootstrapmade.com/maxim-free-onepage-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div class="logo">
+        
+        
+      <a href="index.html"><h1>S.L.V purohitahs<h2>poojas & homas</h2></h1></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+	 <!-- End Header   <li><a class="nav-link scrollto" target="blank" href="gallery.html">Gallery</a></li> -->
+		  
+          <li class="dropdown"><a  class="nav-link scrollto" href="#Poojas"><span>Poojas</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+      <li><a href="#Ganesha  Pooja">Ganesha  Pooja</a></li>
+      <li><a class="nav-link scrollto" href="#Viswakarma Pooja">Viswakarma vratha Pooja</a></li>
+       <li><a class="nav-link scrollto" href="#Gayatri pooja">Gayathri matha Pooja  </a></li>
+        <li><a class="nav-link scrollto" href="#Gayatri pooja">Kuladevatha Pooja </a></li>
+              <li><a class="nav-link scrollto" href="#ashlesha pooja">Ashlesha bali</a></li>
+         <li><a class="nav-link scrollto" href="#Gayatri pooja">Navagraha Pooja  </a></li>
+         
+              
+             
+              
+              <li><a class="nav-link scrollto" href="#">Nakshratha Shanthi Pooja</a></li>
+        <li  class="dropdown"><a href="#durga pooja"><span>Other Poojas</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+         <li><a class="nav-link scrollto" href="#Gayatri pooja">Vasthu Pooja </a></li>
+          <li><a class="nav-link scrollto" href="#Gayatri pooja">Kalabairava Pooja  </a></li>
+           <li><a class="nav-link scrollto" href="#Gayatri pooja">Umamaheshwara Vratha Pooja </a></li>
+                  <li><a class="nav-link scrollto" href="#Lakshmi Pooja">Lakshmi Pooja </a></li>
+                  <li><a class="nav-link scrollto" href="#Sathyanarayana Pooja">Sathyanarayana Pooja</a></li>
+                  <li><a class="nav-link scrollto" href="#Durga Pooja">Durga Pooja</a></li>
+                  <li><a href="#Vishnu pooja">Vishnu pooja</a></li>
+                  <li><a href="#Shiva Pooja">Shiva Pooja</a></li>
+          <li><a href="#Krishna Pooja">Krishna Pooja</a></li>
+          <li><a href="#Hanuma Pooja">Hanuma Pooja</a></li>
+          
+          <li><a href="#Gowri Pooja">Gowri Pooja</a></li>
+          <li><a href="#Saraswathi Pooja">Saraswathi Pooja</a></li>
+          <li><a href="#Kali Pooja">Kali Pooja</a></li>
+          <li><a href="#Parwathi Pooja">Parwathi Pooja</a></li>
+          <li><a href="#Chamundi Pooja">Chamundi Pooja</a></li>
+          <li><a href="#Surya Pooja">Surya Pooja</a></li>
+          <li><a href="#Chandra Pooja">Chandra Pooja</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+      <li class="dropdown"><a  class="nav-link scrollto" href="#Homas"><span>Homam</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#Homas">Ganapathi Homam</a></li>
+              
+              <li><a href="#Homas">Navagraha Homam</a></li>
+              <li><a href="#Homas">Mruthanjaya Homam</a></li>
+              <li><a href="#Homas">Dhanvanthari Homam</a></li>
+        <li class="dropdown"><a href="#Homas"><span>Other Homam</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#Homas">Sudharshana Homam</a></li>
+                  <li><a href="#Homas">Chandi Homam</a></li>
+                  <li><a href="#Homas">Vastu Homam</a></li>
+                  <li><a href="#Homas">Rudra Homam</a></li>
+                 
+                </ul>
+              </li>
+            </ul>
+          </li>
+      <li class="dropdown"><a  class="nav-link scrollto" href="#Ceremony"><span>Ceremony</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#Ceremony">Engagement ceremony</a></li>
+              
+              <li><a href="#Ceremony">Marriage Ceremony</a></li>
+              <li><a href="#Ceremony">Namakarana Ceremony </a></li>
+              <li><a href="#Ceremony">Housewarming Ceremony</a></li>
+        <li class="dropdown"><a href="#"><span>Other Ceremony</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#Ceremony">Aksharabyasam Ceremony</a></li>
+                  <li><a href="#Ceremony">Upannayana Ceremony</a></li>
+                  <li><a href="#Ceremony">Jhanana Shanthi Ceremony</a></li>
+                  <li><a href="#Ceremony">Shastipoorthi</a></li>
+                  <li><a href="#Ceremony">Kumba Abishekam</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  
+  
+
+
+  <!-- ======= Hero Section ======= -->
+  <section   id="hero " class="d-flex flex-column testimonials justify-content-center align-items-center">
+    <div class="container text-center text-md-left" data-aos="fade-up">
+	<div class="testimonials-slider swiper"  data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                
+                <h4>ॐ अग्निमीळे पुरोहितं<br> यज्ञस्य देवमृत्विजम्|
+				<br>होतारं रत्नधातमम् ||  <BR>I honour agni
+				<BR> who act as purohitha</h4>
+                <h4>of the yagya<br> it's ritvij .
+				<br>The yagya which 
+				<br>is directed towards the devas.
+				<br>Who is also the hotara 
+				<br>bestower of ratna </h4>
+
+                
+               
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h4>
+               PUROHITAHS ARE THE PEOPLE
+			   <BR>WHO HELP US TO PERFORM
+			   <BR>THE PRAYER WITH SPECIAL ASPECTS
+                </h4>
+				<h4>LIKE VEDAMANTRAS.
+				<BR>PSYCHOLOGISTS DESCRIBE
+				<BR>PRAYER AS "SUBCONSCIOUS 'AND'
+                 <BR>EMOTIONAL EFFUSION".			
+				</h4>
+               
+               
+              </div>
+            </div>
+
+           
+
+           
+
+         <!-- End testimonial item -->
+		 
+            
+		  <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h4>WE ARE HERE TO 
+				<BR>CONNECT WITH GOD.
+				<BR> WE ARE PUROHITAHS
+				<BR>THIS IS THE PLACE FOR 
+				 <BR>DEVOTEES TO SEARCH FOR PUROHITHAS
+				 <BR> TO COMPLE THE 
+				 <BR>DEVOTION OF DEVOTEES 
+				 <BR>SUCESSFULLY.
+                </h4>
+                
+               
+              </div>
+            </div>
+
+           
+
+           
+
+         <!-- End testimonial item -->
+		    
+		  <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h4>WE CONDUCT ALL 
+				<BR>THE POOJAS AND 
+				<BR> HOMAS WITH FULL 
+				<BR> DEDICATION AND DECIPLANE
+				 <BR>BY WISHING GOOD
+				 <BR> TO   ALL. 
+				 <BR>KINDLY REFFER PREFERED TABS  
+				 <BR>AND BOOK YOUR SERVICES
+				 <BR>THANK YOU!
+                </h4>
+                
+               
+              </div>
+            </div>
+			        <!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+	
+	
+     
+      
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+  
+  
+ 
+  
+   
+  <main id="main">
+  
+  
+  
+
+ 
+
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+	
+      <div class="container">
+    
+        <div class="row">
+	<img src="img/grandparents.jpg" width="50px" height="200px">
+    
+           <div class="col-xl-6 col-lg-7 team"   data-aos="fade-up">
+            <div class="member">
+              <img src="img/profile.jpg" height="400px"  class="img-fluid" alt="Purohit">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>MANJUNATHLOKESHWARACHARYA</h4>
+                  <span>("Cheif Porohit")</span>
+                </div>
+                <div class="social">
+                  
+                  <a href="tel: 9790023336"><i class="bi bi-phone-fill"></i></a>
+                  <a href="https://wa.me/+91 9790023336" target="blank"><i class="bi bi-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-5 pt-5 pt-lg-0">
+            <h3 data-aos="fade-up">MANJUNATHLOKESHWARACHARYA</h3>
+            <p data-aos="fade-up">
+            I started my priesthood carrier when,I was 14 years old with my grand father. He was a preist in kakikamba kamateshwara temple  . Located at denkanikottai(635107).   
+            </p>
+			<p  data-aos="fade-up">
+			From past 9 years, I was a cheif priest in the temple after my grand father.From past 5 years I started doing Pooja,Homam and ceremonies etc...
+			</p>
+            <div class="icon-box" data-aos="fade-up">
+              <i class="bx bx-receipt"></i>
+              <h4>Learned vedamantras, spritual lessons,at Brahmamgari Matham. Located at Kadapa dist </h4>
+              <h4>Around 3 years form  2017 to 2020</h4>
+            </div>
+
+            
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-cube-alt"></i>
+              <h4><a href="#Poojas">Poojas</a></h4>
+              <p>Showing reverance or honor for God as a devine being.  </p>
+            </div>
+      <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-cube-alt"></i>
+              <h4><a href="#Homas">Homam</a></h4>
+        <p>Homas is  a sacrifice retuial where devoties offer symbolic things to Lord Agni.</p>
+             </div>
+      <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-cube-alt"></i>
+              <h4><a href="#Ceremony">Ceramonies</a></h4>
+              <p>It is an events which are  celebrated while starting a new chapter in one life</p>
+            </div>
+			
+
+          </div>
+        </div>
+
+      </div>
+    </section> <!-- End About Section -->
+
+    
+
+    <!-- ======= gallery ======= -->
+	
+
+	
+	
+	 <!-- End gallery -->
+	 
+	 
+	 
+	 <marquee scrollamount="3" height="150px">
+	 
+	 <img src="img\gallery\1.jpg" width="200px" height="200px" >
+	 <img src="img\gallery\2.jpg" height="200px" width="200px">
+	 <img src="img\gallery\3.jpg" width="200 px" height="200px">
+	 <img src="img\gallery\4.jpg" width="200 px" height="200px">
+	 <img src="img\gallery\5.jpg" width="200 px" height="200px">
+	 <img src="img\gallery\6.jpg" width="200 px" height="200px">
+	 <img src="img\gallery\7.jpg" width="200 px" height="200px">
+	 <img src="img\gallery\8.jpg" width="200 px" height="200px">
+	 	 <img src="img\gallery\9.jpg" width="200 px" height="200px">
+	 <img src="img\gallery\10.jpg" width="200 px" height="200px">
+	 <img src="img\gallery\11.jpg" width="200 px" height="200px">
+	 <img src="img\gallery\12.jpg" width="200 px" height="200px">
+	 <img src="img\gallery\13.jpg" width="200 px" height="200px">
+	 
+	<img src="img\gallery\15.jpg" width="200 px" height="200px">
+	 <img src="img\gallery\16.jpg" width="200 px" height="200px">
+	 <img src="img\gallery\17.jpg" width="200 px" height="200px">
+	 <img src="img\gallery\19.jpg" width="200 px" height="200px">
+	 <img src="img\gallery\20.jpg" width="200px" height="200px" >
+	 <img src="img\gallery\21.jpg" width="200px" height="100px" >
+	 <img src="img\gallery\22.jpg" width="200px" height="200px" >
+	 <img src="img\gallery\23.jpg" width="200px" height="200px" >
+	 <img src="img\gallery\24.jpg" width="200px" height="200px" >
+	 <img src="img\gallery\25.jpg" width="200px" height="200px" >
+	 <img src="img\gallery\26.jpg" width="200px" height="200px" >
+	 <img src="img\gallery\27.jpg" width="200px" height="200px" >
+	 <img src="img\gallery\28.jpg" width="200px" height="200px" >
+	  <img src="img\gallery\29.jpg" width="200px" height="200px" >
+	 
+	 
+	 </marquee>
+    
+
+    <!-- ======= Poojas Section ======= -->
+  
+    <section id="Poojas" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Poojas</h2>
+          <p> Poojas are the special way of showing honor and  revarace  to the God by the side of  devotees with devotion,dedication and discipline.With  perfect procedure for perticular days.With pure soul and surronding with relaxed mind.<br>This poojas provide us  self satisfaction,energy and confidence to go in the way of sucess.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All Poojas</li>
+              <li data-filter=".filter-app">Main Poojas</li>
+              <li data-filter=".filter-card">Special Poojas</li>
+              <li data-filter=".filter-web">Other Poojas</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up">
+    <section id="ashlesha pooja" >
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img class="allimages"src="img/poojas/ashleshabali pooja.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ashlesha bali pooja</h4>
+                
+         
+                <div  class="portfolio-links">
+                  <a href="img/about poojas/aslesahbalipooja.jpg" data-gallery="portfolioGallery" class="portfolio-lightbo" title="Ashlesha bali pooja"><i>Click here</i></a>
+                 
+                </div>
+        
+              </div>
+            </div>
+          </div>
+</section>
+<section id="Gayatri pooja" >
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages"src="img/poojas/gayatri.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Gayatri pooja</h4>
+               
+                <div class="portfolio-links">
+                  <a href="img/about poojas/gayatripooja.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Gayatri pooja"><i>Click here</i></a>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+<section id="Viswakarma Pooja" >
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/poojas/Vishwakarma.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Viswakarma Pooja</h4>
+               
+                <div class="portfolio-links">
+                  <a href="img/about poojas/vivwakarmapooja.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Viswakarma Pooja"><i >Click here </i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      
+      <section id="Lakshmi Pooja" >
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/poojas/lakshmi pooja.jpg" class="img-fluid" alt="Lakshmi Pooja">
+        
+       <div class="portfolio-info">
+                <h4>Lakshmi Pooja</h4>
+               
+                <div class="portfolio-links">
+                  <a href="img/about poojas/laxmipooja.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Lakshmi Pooja"><i >Click here</i></a>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="Sathyanarayana Pooja">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/poojas/satyanaraya.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sathyanarayana Pooja</h4>
+                
+                <div class="portfolio-links">
+                  <a href="img/about poojas/satyanarayana pooja.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sathyanarayana Pooja"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      
+      <section id="Durga Pooja">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img  class="allimages" src="img/poojas/durga.jpg" class="img-fluid" alt="durga pooja">
+              <div class="portfolio-info">
+                <h4>Durga Pooja</h4>
+                
+                <div class="portfolio-links">
+                  <a href="img/about poojas/durgapooja.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Durga Pooja"><i >click here</i></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="Vishnu pooja">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/poojas/vishnu.jpg" class="img-fluid" alt="Vishnu pooja">
+              <div class="portfolio-info">
+                <h4>Vishnu pooja</h4>
+                
+                <div class="portfolio-links">
+                  <a href="img/about poojas/vishnuooja.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Vishnu pooja"><i >Click here</i></a>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="Shiva Pooja">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img class="allimages"src="img/poojas/Shiva.jpg" class="img-fluid" alt="Shiva Pooja">
+              <div class="portfolio-info">
+                <h4>Shiva Pooja</h4>
+           
+                <div class="portfolio-links">
+                  <a href="img/about poojas/shivapooja.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Shiva Pooja"><i>click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+<section id="Krishna Pooja">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/poojas/krishna.jpg" class="img-fluid" alt="Krishna Pooja">
+              <div class="portfolio-info">
+                <h4>Krishna Pooja</h4>
+                
+                <div class="portfolio-links">
+                  <a href="img/about poojas/krishnaooja.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Krishna Pooja"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+       <section id="Hanuma Pooja">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/poojas/hanuman.jpg" class="img-fluid" alt="Hanuma Pooja">
+              <div class="portfolio-info">
+                <h4>Hanuma Pooja</h4>
+                
+                <div class="portfolio-links">
+                  <a href="img/about poojas/hanumanpooja.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Hanuma Pooja"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="Ganesha  Pooja">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/poojas/ganapathi.jpg" class="img-fluid" alt="Ganesha  Pooja">
+              <div class="portfolio-info">
+                <h4>Ganesha  Pooja</h4>
+                
+                <div class="portfolio-links">
+                  <a href="img/about poojas/ganeshapooja.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ganesha  Pooja"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+     
+      <section id="Gowri Pooja">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/poojas/Gowri Pooja.jpg" class="img-fluid" alt="Gowri Pooja">
+              <div class="portfolio-info">
+                <h4>Gowri Pooja</h4>
+                
+                <div class="portfolio-links">
+                  <a href="img/about poojas/gowripooja.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Gowri Pooja"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="Saraswathi Pooja">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/poojas/Saraswathi Pooja.jpg" class="img-fluid" alt="Saraswathi Pooja">
+              <div class="portfolio-info">
+                <h4>Saraswathi Pooja</h4>
+                
+                <div class="portfolio-links">
+                  <a href="img/about poojas/saraswathi pooja.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Saraswathi Pooja"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="Kali Pooja">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/poojas/Kali Pooja.jpg" class="img-fluid" alt="Kali Pooja">
+              <div class="portfolio-info">
+                <h4>Kali Pooja</h4>
+                
+                <div class="portfolio-links">
+                  <a href="img/about poojas/kalipooja.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Krishna Pooja"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="Parwathi Pooja">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/poojas/Parwathi Pooja.jpg" class="img-fluid" alt="Parwathi Pooja">
+              <div class="portfolio-info">
+                <h4>Parwathi Pooja</h4>
+                
+                <div class="portfolio-links">
+                  <a href="img/about poojas/parvathipooja.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Parwathi Pooja"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="Chamundi Pooja">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/poojas/Chamundi Pooja.jpg" class="img-fluid" alt="Chamundi Pooja">
+              <div class="portfolio-info">
+                <h4>Chamundi Pooja</h4>
+                
+                <div class="portfolio-links">
+                  <a href="img/about poojas/chandipooja.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Chamundi Pooja"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="Surya Pooja">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/poojas/Surya Pooja.jpg" class="img-fluid" alt="Surya Pooja">
+              <div class="portfolio-info">
+                <h4>Surya Pooja</h4>
+                
+                <div class="portfolio-links">
+                  <a href="img/about poojas/suryapooja.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Surya Pooja"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="Chandra Pooja">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/poojas/Chandra Pooja.jpg" class="img-fluid" alt="Chandra Pooja">
+              <div class="portfolio-info">
+                <h4>Chandra Pooja</h4>
+                
+                <div class="portfolio-links">
+                  <a href="img/about poojas/chandipooja.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Chandra Pooja"><i >click here</i></a>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+        </div>
+
+      </div>
+    
+
+    </section><!-- End poojas Section -->
+  
+      <!-- ======= Homas Section ======= -->
+    <section id="Homas" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Homas</h2>
+          <p>Homam is a sacrifice ritual done by inviting <span color="yellow"><B>Lord Agni</B></span> by offering him symbolic things with all the slokas and mantras.The participants will get rid off their sins,bad thoughts,decieses and gives good vibes and energy.This homam offers us plesent atmospher in the home,surroundings and ejects the negative enery from us.<br>The power of burning fire changes many things,mind ect... </p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All Homam</li>
+              <li data-filter=".filter-app">Main Homam</li>
+              <li data-filter=".filter-card">Special Homam</li>
+              <li data-filter=".filter-web">Other Homam</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up">
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/homam/ganapathi homam.jpg" class="img-fluid" alt="Ganapathi Homam">
+              <div class="portfolio-info">
+                <h4>Ganapathi Homam</h4>
+               
+                <div class="portfolio-links">
+                  <a href="img/homam/ganapathi homam.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ganapathi Homam"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/homam/Navagraha Homam.jpg" class="img-fluid" alt="Navagraha Homam">
+              <div class="portfolio-info">
+                <h4>Navagraha Homam</h4>
+               
+                <div class="portfolio-links">
+                  <a href="img/homam/Navagraha Homam.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Navagraha Homam"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/homam/Mruthanjaya Homam.jpg" class="img-fluid" alt="Mruthanjaya Homam">
+              <div class="portfolio-info">
+                <h4>Mruthanjaya Homam</h4>
+               
+                <div class="portfolio-links">
+                  <a href="img/homam/Mruthanjaya Homam.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mruthanjaya Homam"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/homam/Dhanvanthari Homam.jpg" class="img-fluid" alt="Dhanvanthari Homam">
+              <div class="portfolio-info">
+                <h4>Dhanvanthari Homam</h4>
+               
+                <div class="portfolio-links">
+                  <a href="img/homam/Dhanvanthari Homam.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Dhanvanthari Homam"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/homam/Sudharshana Homam.jpg" class="img-fluid" alt="Sudharshana Homam">
+              <div class="portfolio-info">
+                <h4>Sudharshana Homam</h4>
+               
+                <div class="portfolio-links">
+                  <a href="img/homam/Sudharshana Homam.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sudharshana Homam"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/homam/Chandi Homam.jpg" class="img-fluid" alt="Chandi Homam">
+              <div class="portfolio-info">
+                <h4>Chandi Homam</h4>
+               
+                <div class="portfolio-links">
+                  <a href="img/homam/Chandi Homam.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Chandi Homam"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/homam/Vastu Homam.jpg" class="img-fluid" alt="Vastu Homam">
+              <div class="portfolio-info">
+                <h4>Vastu Homam</h4>
+               
+                <div class="portfolio-links">
+                  <a href="img/homam/Vastu Homam.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Vastu Homam"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/homam/Rudra Homam.jpg" class="img-fluid" alt="Rudra Homam">
+              <div class="portfolio-info">
+                <h4>Rudra Homam</h4>
+               
+                <div class="portfolio-links">
+                  <a href="img/homam/Rudra Homam.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Rudra Homam"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+            
+
+        </div>
+
+      </div>
+    
+
+    </section>
+    
+  
+    
+    
+
+    <!-- ======= homas Section ======= -->
+  
+  <!-- ======= Ceremony Section ======= -->
+  
+  <section id="Ceremony" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>ceremony</h2>
+          <p>Ceremony is a event celebrated to <B>make a moment </B>to rememeber the moment for  rest of the life. The events are celebrated with particular procedure accoridng to their family by inviting friends and family.<br>The events are filled with lot of enjoyments,gifts and memories.<br>That momemunt may be anything like introducing new part and  new chapter in your life.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All Ceremony</li>
+              <li data-filter=".filter-app">MAin Ceremony</li>
+              <li data-filter=".filter-card">Special Ceremony</li>
+              <li data-filter=".filter-web">Other Ceremony</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up">
+     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/ceremony/Engagement ceremony.jpg" class="img-fluid" alt="Engagement ceremony">
+              <div class="portfolio-info">
+                <h4>Engagement ceremony</h4>
+               
+                <div class="portfolio-links">
+                  <a href="img/ceremony/Engagement ceremony.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Engagement ceremony"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/ceremony/Marriage Ceremony.jpg" class="img-fluid" alt="Marriage Ceremony">
+              <div class="portfolio-info">
+                <h4>Marriage Ceremony</h4>
+               
+                <div class="portfolio-links">
+                  <a href="img/ceremony/Marriage Ceremony.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Marriage Ceremony"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/ceremony/Namakarana Ceremony.jpg" class="img-fluid" alt="Namakarana Ceremony">
+              <div class="portfolio-info">
+                <h4>Namakarana Ceremony</h4>
+               
+                <div class="portfolio-links">
+                  <a href="img/ceremony/Namakarana Ceremony.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Namakarana Ceremony"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/ceremony/Housewarming Ceremony.jpg" class="img-fluid" alt="Housewarming Ceremony">
+              <div class="portfolio-info">
+                <h4>Housewarming Ceremony</h4>
+               
+                <div class="portfolio-links">
+                  <a href="img/ceremony/Housewarming Ceremony.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Housewarming Ceremony"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/ceremony/Aksharabyasam ceremony.jpg" class="img-fluid" alt="Aksharabyasam Ceremony">
+              <div class="portfolio-info">
+                <h4>Aksharabyasam Ceremony</h4>
+               
+                <div class="portfolio-links">
+                  <a href="img/ceremony/Aksharabyasam ceremony.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aksharabyasam Ceremony"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/ceremony/Upannayana Ceremony.jpg" class="img-fluid" alt="Upannayana Ceremony">
+              <div class="portfolio-info">
+                <h4>Upannayana Ceremony</h4>
+               
+                <div class="portfolio-links">
+                  <a href="img/ceremony/Upannayana Ceremony.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Upannayana Ceremony"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img class="allimages" src="img/ceremony/Jhanana Shanthi Ceremony.jpg" class="img-fluid" alt="Jhanana Shanthi Ceremony">
+              <div class="portfolio-info">
+                <h4>Jhanana Shanthi Ceremony</h4>
+               
+                <div class="portfolio-links">
+                  <a href="img/ceremony/Jhanana Shanthi Ceremony.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Jhanana Shanthi Ceremony"><i >click here</i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
+
+      </div>
+    
+
+    </section>
+  
+    <!-- ======= ceremony Section ======= -->
+  
+
+    <!-- ======= Testimonials Section ======= 
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Testimonials</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div><!-- End testimonial item 
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+              </div>
+            </div><!-- End testimonial item 
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div><!-- End testimonial item 
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div><!-- End testimonial item --
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div><!-- End testimonial item --
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section --
+
+    
+
+    <!-- ======= Team Section ======= --
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Team</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="member">
+              <img src="img/team/team-1.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <img src="img/team/team-2.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <img src="img/team/team-3.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <img src="img/team/team-4.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+       abbr           <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+         
+        </div>
+
+        <div class="row no-gutters justify-content-center" data-aos="fade-up">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+        <a href="https://goo.gl/maps/nXKDDAJ7ijmj7r226" target="blank">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Denkanikotai </h4>
+                <p>Sri kalikamba Temple</p>
+        </a>
+              </div>
+
+              <div class="email mt-4">
+        <a href="mailto:manjucharya1995@gmail.com">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>manjucharya1995@gmail.com</p></a>
+              </div>
+
+              <div class="phone mt-4">
+                <a href="tel:9790023336"><i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p >9790023336</a></p></a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243.428478001892!2d77.79118860606107!3d12.525720411706779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae7d8004bdc799%3A0x8f9a16a31d25a3c0!2sSri%20Kalikamba%20Kamateswar%20Temple!5e0!3m2!1sen!2sin!4v1655838414253!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+
+        <div class="row mt-5 justify-content-center" data-aos="fade-up">
+          <div class="col-lg-10">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Contact us!</h3>
+              <p>
+              Denkanikotai<br>
+               Kalikamba Temple<br><br>
+                <strong>Phone:</strong> 9790023336<br>
+                <strong>Email:</strong> manjucharya1995@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                
+                <a href="tel:9790023336" class="linkedin"><i class="bi bi-phone"></i></a>
+				<a href="" class="https://wa.me/+91 9790023336"><i class="bx bxl-whatsapp"></i></a>
+				<a href="" class="mailto:manjucharya1995@gmail.com"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#Poojas">Poojas</a></li>
+			  <li><i class="bx bx-chevron-right"></i> <a href="#Homas">Homam</a></li>
+			  <li><i class="bx bx-chevron-right"></i> <a href="#Ceremony">Ceramonies</a></li>
+			  <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+         
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>????</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>U.L.N</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/maxim-free-onepage-bootstrap-theme/ -->
+        Designed by <a href="#">U.L.N</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
