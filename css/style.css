@@ -759,7 +759,7 @@ section {
   color: #e6b944;
 }
 .testimonials .testimonial-item h4 {
-  font-size: 20px;
+  font-size: 25px;
   color: #e6b944;
  text-align:center;
 }
@@ -801,7 +801,7 @@ section {
   border: 1px solid #1bac91;
 }
 .testimonials  {
-  background: url("../img/background1.jpg") center center;
+  background: url("../img/background.jpg") center center;
  background-repeat:no-repeat;
 }
 
